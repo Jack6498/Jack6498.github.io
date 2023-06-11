@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --scroll-primary-rgb: rgba(19,58,148,0.8);
+  --scroll-secondary-rgb: rgba(28, 120, 196, 0.445);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,8 +17,27 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+*::-webkit-scrollbar {
+    width: 22px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background:#1d4ed8;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.747);
+    border-radius: 20px;
+    border: 7px solid #1d4ed8;
+  }
+
+*{
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-primary-rgb) var(--scroll-secondary-rgb);
+}
 
 body {
+  overflow: overlay;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
