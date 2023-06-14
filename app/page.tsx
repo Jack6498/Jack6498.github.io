@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 export default function Home() {
   return (
-    <main className='w-full h-[2000px] bg-gradient-to-r from-yellow-400 to-blue-700'>
+    <main className='h-fit'>
       {/*titlebar*/}
-      <div className='flex sticky float-top w-full h-28 ml-6 justify-start items-center'>
+      <div className='flex w-full h-28 justify-start items-center'>
           <div className='transition ease-in-out delay-150 hover:bg-blue-800 hover:-translate-y-2 duration-150 p-2 ml-2 text-xl rounded-xl bg-yellow-600 items-center' >  
             <Link className='float-left ml-1 mr-2' href="/Chapters">Chapters</Link> 
             <Image className='mt-2 mr-1' src='/down_arrow.png' alt='^' width={15} height={15}/>
@@ -30,7 +30,7 @@ export default function Home() {
             <div className='grid grid-cols-3 w-[90%] h-[400px] justify-self-center gap-6'>
 
               {/*Each block here works as a button*/}
-              <Link className='block border-amber-100 border rounded-xl' href =''>
+              <Link className='block border-amber-100 border rounded-xl' href ='/Sections/Tech_Concepts'>
                 <div className='h-11 w-full float-top mt-3 text-center'>Technical Concepts</div>
                 <div className='flex w-full justify-center'>
                   <Image className='w-1/2 h-[200px]' alt='' src='/gear.svg' width={50} height={50} ></Image>
