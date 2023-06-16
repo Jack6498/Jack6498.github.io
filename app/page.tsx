@@ -37,40 +37,40 @@ export default function Home() {
                 </div> 
               </Link>
 
-              <div className='block border-amber-100 border rounded-xl'>
+              <Link className='block border-amber-100 border rounded-xl' href={'/Sections/Math'}>
                 <div className='h-11 w-full float-top mt-3 text-center'>Math</div>
                 <div className='flex w-full justify-center'>
                   <Image className='w-1/2 h-[200px]' src = '/math.svg' alt='' width={50} height={30}/>
                 </div>
-              </div>
+              </Link>
 
-              <div className='block border-amber-100 border rounded-xl justify-center'>
+              <Link className='block border-amber-100 border rounded-xl justify-center' href={'/Sections/Java'}>
                 <div className='h-11 w-full float-top mt-3 text-center'>Java</div>
                 <div className='flex w-full justify-center'>
                   <Image className='w-1/2 h-[200px]' alt='' src='/java.svg' width={50} height={50}/>
                 </div>
-              </div>
+              </Link>
 
-              <div className='block border-amber-100 border rounded-xl justify-center'>
+              <Link className='block border-amber-100 border rounded-xl justify-center' href={'/Sections/WPILib'}>
                 <div className='h-11 w-full float-top mt-3 text-center'>WPILib</div>
                 <div className='flex w-full justify-center'>
                   <Image className='w-1/2 h-[170px] mb-5' src='/WPILibDev.png' alt='' width={50} height={50}/>
                 </div>
-              </div>
+              </Link>
 
-              <div className='block border-amber-100 border rounded-xl justify-center'>
+              <Link className='block border-amber-100 border rounded-xl justify-center' href={'/Sections/Past_Bots'}>
                 <div className='h-11 w-full float-top mt-3 text-center'>past Robots </div>
                 <div className='flex w-full justify-center'>
                    <Image className='w-1/2 h-[170px] mb-5' alt='' height={50} width={50} src='robot.svg'/>
                 </div>
-              </div>
+              </Link>
 
-              <div className='block border-amber-100 border rounded-xl justify-center'>
+              <Link className='block border-amber-100 border rounded-xl justify-center'href={'/Sections/Web_Docs'}>
                 <div className='h-11 w-full float-top mt-3 text-center'>Web Documentation</div>
                 <div className='flex w-full justify-center'>
                   <Image className='w-1/2 h-[170px] mb-5' alt='' src='/book.svg' width={50} height={50}/>
                 </div>
-              </div>
+              </Link>
 
             </div>
           </div>
